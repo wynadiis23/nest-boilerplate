@@ -18,7 +18,8 @@ jobs:
           node-version: 'latest' # Use the required Node.js version for semantic-release
 
       - name: Install semantic-release (latest version)
-        run: yarn global add semantic-release @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
+        run: |
+          yarn add -D semantic-release @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
 
       - name: Run semantic-release
         env:
