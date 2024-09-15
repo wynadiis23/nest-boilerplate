@@ -16,5 +16,6 @@
             }
         ],
         "@semantic-release/github"
-    ]
+    ],
+    "repositoryUrl": "https://github.com/wynadiis23/nest-boilerplate"
 }
