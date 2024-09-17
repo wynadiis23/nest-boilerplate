@@ -102,7 +102,7 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "**/*.(t)s": [
+    "**/*.(t|j)s": [
       "yarn lint",
       "yarn format"
     ]
