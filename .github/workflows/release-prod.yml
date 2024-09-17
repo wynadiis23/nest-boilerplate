@@ -26,7 +26,7 @@ jobs:
           node-version: 'latest'
 
       - name: Install dependencies
-        run: yarn install semantic-release @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
+        run: yarn add -D semantic-release @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
 
       - name: Run semantic-release for production release
         env:
