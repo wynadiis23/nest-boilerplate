@@ -1,15 +1,12 @@
 name: Production Release
 
 on:
-  pull_request:
-    types:
-      - closed # Triggers when a PR is merged
+  push:
     branches:
-      - production # Only trigger on merges to the production branch
+      - production
 
 jobs:
   release:
-    if: github.event.pull_request.merged == true
     permissions:
       contents: write
       pull-requests: write
