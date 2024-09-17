@@ -7,6 +7,6 @@ export class AppService {
   }
 
   getRelease(): string {
-    return 'Release 2.0.6';
+    return 'Release 2.0.6 test';
   }
 }
