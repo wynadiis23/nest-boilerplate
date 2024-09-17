@@ -23,7 +23,7 @@ jobs:
 
       - name: Install semantic-release (latest version)
         run: |
-          yarn add -D semantic-release @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
+          yarn add -D semantic-release @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
 
       - name: Build
         run: yarn build
