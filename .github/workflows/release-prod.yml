@@ -1,0 +1,34 @@
+name: Production Release
+
+on:
+  pull_request:
+    types:
+      - closed # Triggers when a PR is merged
+    branches:
+      - production # Only trigger on merges to the production branch
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js (Newer version)
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'latest'
+
+      - name: Install dependencies
+        run: yarn install semantic-release @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
+
+      - name: Run semantic-release for production release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

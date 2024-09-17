@@ -1,8 +1,8 @@
-name: Deploy
+name: Deploy to Production
 
 on:
   workflow_run:
-    workflows: ['Release'] # Name of the workflow to wait for (same as the name in release.yml)
+    workflows: ['Production Release']
     types:
       - completed # Runs when the workflow is completed
 
@@ -14,4 +14,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Run deployment process
-        run: echo "Deploying to staging"
+        run: echo "Deploying to production"
