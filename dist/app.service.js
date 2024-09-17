@@ -13,7 +13,7 @@ let AppService = class AppService {
         return 'Hello World! Updated. Testing Release';
     }
     getRelease() {
-        return 'Release 1.0.0';
+        return 'Release 2.0.0';
     }
 };
 exports.AppService = AppService;
