@@ -6,7 +6,15 @@ export class AppService {
     return 'Hello World! Updated. Testing Release';
   }
 
-  getRelease(): string {
+  getReleaseV2(): string {
     return 'Release Endpoint Update';
+  }
+
+  newFeature(): string {
+    return 'New Feature';
+  }
+
+  yourName(name: string): string {
+    return `Hello my name is ${name}`;
   }
 }
