@@ -1,4 +1,4 @@
-name: Release
+name: Release Beta
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Run semantic-release
+      - name: Run semantic-release on beta
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release

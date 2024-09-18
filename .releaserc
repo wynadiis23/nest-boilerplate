@@ -1,8 +1,8 @@
 {
     "branches": [
-        "production",
+        "main",
         {
-            "name": "main",
+            "name": "beta",
             "prerelease": true
         }
     ],
