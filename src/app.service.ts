@@ -7,6 +7,6 @@ export class AppService {
   }
 
   getRelease(): string {
-    return 'Release Endpoint';
+    return 'Release Endpoint Update';
   }
 }
