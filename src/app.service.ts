@@ -6,7 +6,7 @@ export class AppService {
     return 'Hello World! Updated. Testing Release';
   }
 
-  getRelease(): string {
+  getReleaseV2(): string {
     return 'Release Endpoint Update';
   }
 }
