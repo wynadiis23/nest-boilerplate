@@ -9,4 +9,12 @@ export class AppService {
   getReleaseV2(): string {
     return 'Release Endpoint Update';
   }
+
+  newFeature(): string {
+    return 'New Feature';
+  }
+
+  yourName(name: string): string {
+    return `Hello ${name}`;
+  }
 }
