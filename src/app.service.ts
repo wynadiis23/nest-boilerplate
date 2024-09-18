@@ -9,4 +9,8 @@ export class AppService {
   getReleaseV2(): string {
     return 'Release Endpoint Update';
   }
+
+  newFeature(): string {
+    return 'New Feature';
+  }
 }
