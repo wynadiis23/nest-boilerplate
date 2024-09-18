@@ -15,6 +15,6 @@ export class AppService {
   }
 
   yourName(name: string): string {
-    return `Hello ${name}`;
+    return `Hello my name is ${name}`;
   }
 }
