@@ -1,8 +1,8 @@
-name: Deploy to Production
+name: Deploy Production
 
 on:
   workflow_run:
-    workflows: ['Production Release']
+    workflows: ['Release Production']
     types:
       - completed # Runs when the workflow is completed
 
