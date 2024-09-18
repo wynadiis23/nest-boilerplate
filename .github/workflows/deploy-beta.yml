@@ -1,8 +1,8 @@
-name: Deploy
+name: Deploy Beta
 
 on:
   workflow_run:
-    workflows: ['Release'] # Name of the workflow to wait for (same as the name in release.yml)
+    workflows: ['Release Beta'] # Name of the workflow to wait for (same as the name in release.yml)
     types:
       - completed # Runs when the workflow is completed
 
