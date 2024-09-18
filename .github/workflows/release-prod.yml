@@ -1,9 +1,9 @@
-name: Production Release
+name: Release Production
 
 on:
   push:
     branches:
-      - production
+      - main
 
 jobs:
   release:
