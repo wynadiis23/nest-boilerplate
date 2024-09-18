@@ -13,4 +13,8 @@ export class AppService {
   newFeature(): string {
     return 'New Feature';
   }
+
+  yourName(name: string): string {
+    return `Hello ${name}`;
+  }
 }
